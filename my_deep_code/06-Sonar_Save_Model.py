@@ -41,7 +41,7 @@ model.add(Dense(1, activation='sigmoid'))
 model.compile(loss = 'mean_squared_error', optimizer='adam', metrics=['accuracy'])
 
 # 모델 실행
-model.fit(X, Y, epochs=130, batch_size=5)
+model.fit(X_train, Y_train, epochs=130, batch_size=5)
 model.save('my_model.h5')
 
 del model
